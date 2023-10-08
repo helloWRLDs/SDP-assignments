@@ -2,6 +2,8 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hello world");
+        Course course = new CppCourse();
+        course = new AdvancedLevel(course);
+        System.out.println(course.getDescription());
     }
 }
