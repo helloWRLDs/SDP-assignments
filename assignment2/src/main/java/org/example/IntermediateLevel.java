@@ -1,6 +1,6 @@
 package org.example;
 
-public class IntermediateLevel extends  LevelDecorator{
+public class IntermediateLevel extends LevelDecorator{
     public IntermediateLevel(Course course) {
         this.course = course;
     }
@@ -12,6 +12,6 @@ public class IntermediateLevel extends  LevelDecorator{
 
     @Override
     public int getPrice() {
-        return course.price + 50;
+        return course.getPrice() + 50;
     }
 }

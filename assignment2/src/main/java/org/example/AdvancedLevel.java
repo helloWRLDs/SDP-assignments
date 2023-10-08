@@ -12,6 +12,6 @@ public class AdvancedLevel extends LevelDecorator{
 
     @Override
     public int getPrice() {
-        return price + 100;
+        return course.getPrice() + 100;
     }
 }

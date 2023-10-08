@@ -12,6 +12,6 @@ public class BeginnerLevel extends LevelDecorator{
 
     @Override
     public int getPrice() {
-        return price;
+        return course.getPrice() + 20;
     }
 }

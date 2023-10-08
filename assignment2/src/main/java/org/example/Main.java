@@ -5,5 +5,6 @@ public class Main {
         Course course = new CppCourse();
         course = new AdvancedLevel(course);
         System.out.println(course.getDescription());
+        System.out.println(course.getPrice());
     }
 }
