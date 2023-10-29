@@ -1,7 +1,7 @@
 package org.example.assignment4.Observer;
 
 import org.example.assignment4.Factory.Cloth;
-import org.example.assignment4.ListOutput;
+import org.example.assignment4.ClothListOutput;
 
 import java.util.List;
 
@@ -14,8 +14,8 @@ public class Subscriber implements Observer{
 
     @Override
     public void eventHandle(List<Cloth> clothesList) {
-        System.out.printf("Hello, %s. our stock have been updated:", this.name);
-        ListOutput.outputList(clothesList);
+        System.out.printf("Hello, %s. Our stock have been updated:", this.name);
+        ClothListOutput.outputList(clothesList);
         System.out.println("==============================================================\n\n");
     }
 }

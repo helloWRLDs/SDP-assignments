@@ -1,6 +1,7 @@
 package org.example.assignment4.Factory;
 
 public class Shirt implements Cloth{
+    private String type = "shirt";
     private String name;
 
     public Shirt(String name) {
@@ -8,8 +9,7 @@ public class Shirt implements Cloth{
     }
 
     public String getType() {
-        String type = "shirt";
-        return type;
+        return this.type;
     }
 
     @Override

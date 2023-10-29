@@ -21,10 +21,11 @@ public class ClothesStore implements Observed {
     }
 
     public void removeCloth(String type) {
-        for (Cloth cloth : clothList) {
-            if (type.equalsIgnoreCase(cloth.getType())) {
-                clothList.remove(cloth);
+        for (int i = 0; i < clothList.size(); i++) {
+            if (type.equalsIgnoreCase(clothList.get(i).getType())) {
+                clothList.remove(i);
                 notifyObservers();
+                break;
             }
         }
     }

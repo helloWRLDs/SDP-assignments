@@ -1,8 +1,5 @@
 package org.example.assignment4;
 
-
-import org.example.assignment4.Factory.Cloth;
-import org.example.assignment4.Factory.ClothFactory;
 import org.example.assignment4.Observer.Subscriber;
 
 public class Main {
