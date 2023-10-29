@@ -6,6 +6,6 @@ public class Computer {
     }
 
     public void playGameOnPC() {
-        System.out.println("Launching Dota2...");
+        System.out.println("Launching game...");
     }
 }
